@@ -38,6 +38,9 @@
   .social-nav-container {
     display: none;
   }
+  .navigation-list {
+    display: none;
+  }
 }
 @media all and (min-width: 556px) {
   .sm-width-col-1 {
