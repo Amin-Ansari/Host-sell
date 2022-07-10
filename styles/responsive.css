@@ -35,6 +35,9 @@
   .xs-width-col-12 {
     width: 100%;
   }
+  .social-nav-container {
+    display: none;
+  }
 }
 @media all and (min-width: 556px) {
   .sm-width-col-1 {
