@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'IRAN Sans';
+    src: url('IRANSans-Bold.eot');
+    src: url('IRANSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('IRANSans-Bold.woff2') format('woff2'),
+        url('IRANSans-Bold.woff') format('woff'),
+        url('IRANSans-Bold.ttf') format('truetype'),
+        url('IRANSans-Bold.svg#IRANSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
