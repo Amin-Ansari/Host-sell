@@ -41,6 +41,7 @@
   box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
+  direction: rtl;
   font-family: "iran-sans", "B-yekan", "airal";
 }
 
@@ -296,6 +297,11 @@
 }
 
 /*Individual styles  */
+.header-styles {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
 .social-nav-container {
   background: #25272b;
   height: 30px;
