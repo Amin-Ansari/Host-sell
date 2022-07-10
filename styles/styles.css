@@ -398,7 +398,6 @@
 }
 .button-contaienr {
   height: 100%;
-  background-color: red;
 }
 .nav-buttons {
   border: none;
@@ -411,6 +410,7 @@
   color: #fff;
   width: 100px;
   font-size: 18px;
+  transition: 0.8s;
 }
 .sign-in::before {
   content: "\f007";
@@ -429,4 +429,8 @@
 .nav-item:hover {
   background-color: #42454a;
   color: #fff;
+}
+.sign-in:hover {
+  outline: 2px dashed #42c2ff;
+  outline-offset: 2.5px;
 }
