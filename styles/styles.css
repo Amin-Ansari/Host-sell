@@ -405,9 +405,9 @@
 }
 .nav-buttons {
   border: none;
-  height: 40px;
+  height: 54%;
   font-size: 18px;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 .sign-in {
   background-color: #42c2ff;
@@ -423,6 +423,23 @@
   font-style: normal;
   font-size: 13px;
 }
+.off-canvas-button {
+  background-color: transparent;
+  width: 40px;
+  margin: 0px 8px;
+  border: 2px solid #42c2ff;
+  transition: all 0.3s;
+}
+.h-bar {
+  display: block;
+  width: 80%;
+  height: 3px;
+  background-color: #42c2ff;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px auto;
+  transition: all 0.3s;
+}
 /* Hover styles */
 .addi-links > a:hover {
   color: #42c2ff;
@@ -437,4 +454,10 @@
 .sign-in:hover {
   outline: 2px dashed #42c2ff;
   outline-offset: 2.5px;
+}
+.off-canvas-button:hover {
+  background-color: #42c2ff;
+}
+.off-canvas-button:hover > .h-bar {
+  background-color: #fff;
 }
