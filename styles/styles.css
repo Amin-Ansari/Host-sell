@@ -352,6 +352,10 @@
 }
 .nav-container {
   width: inherit;
+  justify-content: space-between;
+}
+.logo-menu-container {
+  height: 100%;
 }
 .logo-contaier {
   width: 74px;
@@ -408,7 +412,7 @@
 .sign-in {
   background-color: #42c2ff;
   color: #fff;
-  width: 100px;
+  width: 95px;
   font-size: 18px;
   transition: 0.8s;
 }
