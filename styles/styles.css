@@ -348,7 +348,7 @@
 }
 .navigation-container {
   background: #f3f3f3;
-  height: 74px;
+  height: 77px;
 }
 .nav-container {
   width: inherit;
@@ -362,10 +362,24 @@
   width: 100%;
   height: 100%;
 }
+.navigation-list {
+  height: 100%;
+}
+.nav-item {
+  height: 100%;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+}
 /* Hover styles */
 .addi-links > a:hover {
   color: #42c2ff;
 }
 .social-icons > i:hover {
   color: #42c2ff;
+}
+.nav-item:hover {
+  background-color: #42454a;
+  color: #fff;
 }
