@@ -79,6 +79,9 @@
   .sm-width-col-12 {
     width: 100%;
   }
+  .off-canvas-button {
+    display: none;
+  }
 }
 @media all and (min-width: 768px) {
   .md-width-col-1 {
@@ -117,6 +120,9 @@
   .md-width-col-12 {
     width: 100%;
   }
+  .off-canvas-button {
+    display: none;
+  }
 }
 @media all and (min-width: 992px) {
   .lg-width-col-1 {
@@ -154,6 +160,9 @@
   }
   .lg-width-col-12 {
     width: 100%;
+  }
+  .off-canvas-button {
+    display: none;
   }
 }
 @media all and (min-width: 1200px) {
@@ -233,7 +242,7 @@
   }
 }
 .container {
-  max-width: 1320px;
+  max-width: 1200px;
 }
 .container-fluid {
   width: 100%;

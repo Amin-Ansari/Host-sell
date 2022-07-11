@@ -325,7 +325,7 @@
   width: 100%;
   height: 100%;
   line-height: 28px;
-  font-size: 14px;
+  font-size: 0.9em;
   transition: all 0.3s;
 }
 .social-media-content {
@@ -343,7 +343,7 @@
   height: 100%;
   padding: 0px 13px;
   line-height: 27px;
-  font-size: 15px;
+  font-size: 0.9em;
   transition: all 0.3s;
 }
 .navigation-container {
@@ -379,7 +379,7 @@
 }
 .nav-item {
   height: 100%;
-  font-size: 17px;
+  font-size: 1em;
   display: flex;
   align-items: center;
   transition: all 0.3s;
@@ -406,14 +406,14 @@
 .nav-buttons {
   border: none;
   height: 54%;
-  font-size: 18px;
+  font-size: 1.1.em;
   border-radius: 5px;
 }
 .sign-in {
   background-color: #42c2ff;
   color: #fff;
-  width: 95px;
-  font-size: 18px;
+  width: 5.7rem;
+  font-size: 1.1em;
   transition: 0.8s;
 }
 .sign-in::before {
@@ -421,7 +421,7 @@
   font-family: "Font Awesome 5 Free";
   font-weight: bold;
   font-style: normal;
-  font-size: 13px;
+  font-size: 0.6em;
 }
 .off-canvas-button {
   background-color: transparent;
@@ -453,7 +453,7 @@
 }
 .sign-in:hover {
   outline: 2px dashed #42c2ff;
-  outline-offset: 2.5px;
+  outline-offset: 2px;
 }
 .off-canvas-button:hover {
   background-color: #42c2ff;
