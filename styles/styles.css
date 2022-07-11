@@ -615,6 +615,75 @@
   font-size: 1.3em;
   transition: all 0.3s;
 }
+.nav-submenu {
+  width: 100%;
+  max-width: 1281px;
+  height: auto;
+  position: fixed;
+  top: 107px;
+  right: 50%;
+  border-radius: 3px;
+  z-index: 3;
+  background: #f3f3f3a9;
+  transform: translate(50%, 25px);
+  opacity: 0;
+  display: none;
+}
+.nav-item:hover > .showUp {
+  display: block;
+  animation: opacityFull 0.3s ease 0.1s 1 normal forwards,
+    moveUp 0.1s ease 0.2s 1 normal forwards;
+}
+.sub-nav-menu {
+  width: 90%;
+  height: auto;
+  justify-content: space-between;
+  margin: 0px auto;
+}
+.sub-list {
+  width: 33.33%;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.sub-list > li {
+  width: 100%;
+  height: auto;
+  color: #2c2c2c;
+}
+.sub-link {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: inherit;
+  padding: 0px 20px;
+}
+.sub-link > h4 {
+  font-size: 2em;
+  position: relative;
+  padding-right: 60px;
+  color: #42c2ff;
+}
+.sub-link > p {
+  font-size: 0.8em;
+  color: #5e5e5e;
+  font-family: "B-yekan";
+}
+.sub-link > h4::before {
+  content: "\f233";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  font-style: noraml;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 20%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
 
 /* Hover styles */
 .addi-links > a:hover {
@@ -639,7 +708,6 @@
 .sub-menu-item:hover {
   color: #f3f3f3;
 }
-
 .sub-title:hover {
   background-color: #f3f3f3;
   color: #25272b;
@@ -655,5 +723,15 @@
 @keyframes moveIn {
   100% {
     transform: translateX(0px);
+  }
+}
+@keyframes moveUp {
+  100% {
+    transform: translate(50%, 0px);
+  }
+}
+@keyframes opacityFull {
+  100% {
+    opacity: 1;
   }
 }
