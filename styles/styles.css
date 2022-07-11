@@ -469,16 +469,22 @@
 .off-canvas-item {
   color: #fff;
   width: 100%;
-  height: 3rem;
+  height: 2.3em;
   font-size: 1.5em;
   overflow: hidden;
   padding-right: 5px;
+}
+.sub-title {
+  width: 100%;
+  height: 3rem;
+  font-size: 1em;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  transition: all 0.3s;
+  line-height: 43px;
   position: relative;
+  transition: all 0.3s;
 }
-.off-canvas-item::after {
+.sub-title::after {
   font-family: "Font Awesome 5 Free";
   font-weight: bold;
   font-style: noraml;
@@ -489,7 +495,13 @@
   height: 100%;
   width: 30px;
   text-align: center;
-  line-height: 3rem;
+  line-height: 43px;
+}
+.active-state {
+  background-color: #f3f3f3;
+  color: #25272b;
+  transition: all 0.3s;
+  padding-right: 20px;
 }
 .plus::after {
   content: "\f0fe";
@@ -572,7 +584,7 @@
   background-color: #f3f3f3;
   color: #25272b;
 }
-.off-item-hover:hover {
+.sub-title:hover {
   background-color: #f3f3f3;
   color: #25272b;
   transition: all 0.3s;

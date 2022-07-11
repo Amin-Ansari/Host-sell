@@ -1,6 +1,7 @@
 let cnavasButton = document.querySelector(".off-canvas-button");
 let canvas = document.querySelector(".off-canvas");
 let innerCanvas = document.querySelector(".off-canvas-menu");
+let canvasItem = document.querySelectorAll(".sub-title");
 
 cnavasButton.addEventListener("click", showAndHideCanvas);
 canvas.addEventListener("click", (eventObj) => {
@@ -9,6 +10,9 @@ canvas.addEventListener("click", (eventObj) => {
     innerCanvas.classList.remove("move-in");
     undoRotation();
   }
+});
+canvasItem.forEach(function (item) {
+  item.addEventListener("click", openMenuUp);
 });
 
 function showAndHideCanvas() {
@@ -29,5 +33,13 @@ function undoRotation() {
   let allBars = document.querySelectorAll(".h-bar");
   for (let element of allBars) {
     element.classList.remove("rotated-bars");
+  }
+}
+function openMenuUp() {
+  this.parentElement.classList.toggle("height-auto");
+  if (this.classList.contains("plus")) {
+    this.classList.replace("plus", "minus");
+  } else {
+    this.classList.replace("minus", "plus");
   }
 }
