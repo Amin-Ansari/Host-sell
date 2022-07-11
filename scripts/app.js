@@ -43,4 +43,22 @@ function openMenuUp() {
   } else {
     this.classList.replace("minus", "plus");
   }
+  moveItemsIn(this);
+}
+function moveItemsIn(givvenELement) {
+  if (givvenELement.classList.contains("minus")) {
+    let itmes = document.querySelector(".active-state+ul");
+    itmes = itmes.children;
+    let i = 0;
+    for (let element of itmes) {
+      element.classList.add("sub-in");
+      element.style = `transition: all 0.3s ease ${i}s;`;
+      i += 0.1;
+    }
+  } else {
+    let allItems = document.querySelectorAll(".sub-in");
+    for (let ele of allItems) {
+      ele.classList.remove("sub-in");
+    }
+  }
 }
