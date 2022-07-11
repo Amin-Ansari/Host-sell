@@ -2,7 +2,10 @@ let cnavasButton = document.querySelector(".off-canvas-button");
 let canvas = document.querySelector(".off-canvas");
 let innerCanvas = document.querySelector(".off-canvas-menu");
 let canvasItem = document.querySelectorAll(".sub-title");
+let theHeader = document.querySelector("header");
+let theNavigation = document.querySelector("nav");
 
+window.addEventListener("scroll", resizeHeader);
 cnavasButton.addEventListener("click", showAndHideCanvas);
 canvas.addEventListener("click", (eventObj) => {
   if (eventObj.target == canvas) {
@@ -60,5 +63,15 @@ function moveItemsIn(givvenELement) {
     for (let ele of allItems) {
       ele.classList.remove("sub-in");
     }
+  }
+}
+function resizeHeader() {
+  let headerHeight = theHeader.offsetHeight;
+  if (window.scrollY >= headerHeight) {
+    theHeader.firstElementChild.style = "display:none;";
+    theNavigation.style.height = "73px";
+  } else {
+    theHeader.firstElementChild.style = "display:block;";
+    theNavigation.style.height = "77px";
   }
 }

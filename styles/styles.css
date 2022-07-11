@@ -301,6 +301,7 @@
   position: fixed;
   top: 0px;
   right: 0px;
+  transition: all 0.3s;
 }
 .social-nav-container {
   background: #25272b;
@@ -349,6 +350,7 @@
 .navigation-container {
   background: #f3f3f3;
   height: 77px;
+  transition: all 0.3s;
 }
 .nav-container {
   width: inherit;
