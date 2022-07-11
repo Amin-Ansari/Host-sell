@@ -37,6 +37,7 @@ function undoRotation() {
 }
 function openMenuUp() {
   this.parentElement.classList.toggle("height-auto");
+  this.classList.toggle("active-state");
   if (this.classList.contains("plus")) {
     this.classList.replace("plus", "minus");
   } else {
