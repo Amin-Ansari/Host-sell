@@ -454,7 +454,6 @@
   max-width: 450px;
   height: 100%;
   background-color: #25272b;
-  padding-right: 20px;
   transition: width 0.3s;
   transform: translateX(450px);
 }
@@ -463,8 +462,9 @@
 }
 .off-canvas-menu > ul {
   width: 100%;
-  height: 100%;
+  height: auto;
   flex-direction: column;
+  padding-right: 20px;
 }
 .off-canvas-item {
   color: #fff;
@@ -473,6 +473,13 @@
   font-size: 1.5em;
   padding-right: 5px;
   overflow: hidden;
+  transition: all 0.3s;
+}
+.off-canvas-item:nth-last-of-type(1) {
+  width: 100%;
+  height: 48px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 .sub-title {
   width: 100%;
@@ -559,13 +566,38 @@
 .show {
   display: block;
 }
+.off-canvas-social {
+  flex-direction: row !important;
+  color: #7c7c7c;
+  padding-right: 0px !important;
+}
+.icon-item {
+  width: auto;
+}
+.social-icons-off {
+  font-size: 1em;
+}
+.social-icons-off {
+  display: inline-flex;
+  height: 100%;
+  color: inherit;
+}
+.social-icons-off > i {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 0px 13px;
+  line-height: 27px;
+  font-size: 1.3em;
+  transition: all 0.3s;
+}
 
 /* Hover styles */
 .addi-links > a:hover {
   color: #42c2ff;
 }
-.social-icons > i:hover {
-  color: #42c2ff;
+.social-icons-off > i:hover {
+  color: #fff;
 }
 .nav-item:hover {
   background-color: #42454a;
@@ -590,7 +622,11 @@
   color: #25272b;
   padding-right: 20px;
 }
-
+.off-canvas-item:nth-last-of-type(1):hover {
+  background-color: #f3f3f3;
+  color: #25272b;
+  padding-right: 20px;
+}
 /* Animations */
 
 @keyframes moveIn {
