@@ -632,7 +632,7 @@
 .nav-item:hover > .showUp {
   display: block;
   animation: opacityFull 0.3s ease 0.1s 1 normal forwards,
-    moveUp 0.1s ease 0.2s 1 normal forwards;
+    moveUp 0.2s ease 0.1s 1 normal forwards;
 }
 .sub-nav-menu {
   width: 90%;
