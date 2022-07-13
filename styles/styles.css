@@ -708,22 +708,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.text-button {
-  border: 3px solid salmon;
-}
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url(../images/man.png) no-repeat left center;
-  background-size: contain;
-}
-
-.slide-content {
-  width: 100%;
-  max-width: 2000px;
-  height: 100%;
-}
 .slide:nth-of-type(1) {
   background-color: #95a5a6;
 }
@@ -733,18 +717,39 @@ body {
 .slide:nth-of-type(3) {
   background-color: black;
 }
+.slide-content {
+  width: 100%;
+  max-width: 2000px;
+  height: 100%;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/man.png) no-repeat left center;
+  background-size: contain;
+}
+.text-button {
+  padding: 180px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 .break-span {
   display: block;
   color: #fff;
   font-size: 3.5em;
   font-weight: bold;
 }
-/* .slide:nth-of-type(2) {
+.slider-read-more {
+  border: none;
+  width: 120px;
+  height: 45px;
+  font-size: 1.8em;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: 0.2s;
 }
-.slide:nth-of-type(3) {
-}
-.slide:nth-of-type(4) {
-} */
 
 /* Hover styles */
 .addi-links > a:hover {
@@ -781,6 +786,11 @@ body {
 }
 .sub-link:hover {
   opacity: 0.5;
+}
+.slider-read-more:hover {
+  outline: 3px solid #fff;
+  background-color: transparent;
+  color: #fff;
 }
 /* Animations */
 

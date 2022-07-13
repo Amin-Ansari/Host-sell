@@ -289,6 +289,9 @@
   .xl-width-col-12 {
     width: 100%;
   }
+  .slider-section {
+    height: 40rem;
+  }
 }
 @media all and (min-width: 1400px) {
   .xxl-width-col-1 {
