@@ -660,17 +660,21 @@
   display: block;
   color: inherit;
   padding: 0px 20px;
+  transition: 0.3s;
 }
+
 .sub-link > h4 {
-  font-size: 2em;
+  font-size: 1.2em;
   position: relative;
-  padding-right: 60px;
+  padding-right: 1.7em;
   color: #42c2ff;
+  font-family: "iran-sans-bold";
 }
 .sub-link > p {
   font-size: 0.8em;
   color: #5e5e5e;
   font-family: "B-yekan";
+  padding-right: 0.9em;
 }
 .sub-link > h4::before {
   content: "\f233";
@@ -684,7 +688,7 @@
   height: 100px;
   display: flex;
   justify-content: center;
-  padding-top: 15px;
+  padding-top: 12px;
 }
 
 /* Hover styles */
@@ -719,6 +723,9 @@
   background-color: #f3f3f3;
   color: #25272b;
   padding-right: 20px;
+}
+.sub-link:hover {
+  opacity: 0.5;
 }
 /* Animations */
 
