@@ -698,7 +698,7 @@ body {
   width: 400vw;
   display: flex;
   overflow: hidden;
-  /* transform: translateX(-25); */
+  /* transform: translateX(200vw); */
 }
 .slide {
   height: 100%;
@@ -707,29 +707,31 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+.text-button {
+  border: 3px solid salmon;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/man.png) no-repeat left center;
+  background-size: contain;
+}
+
 .slide-content {
   width: 100%;
+  max-width: 2000px;
   height: 100%;
-  justify-content: flex-end;
-  align-items: center;
-  position: relative;
-}
-.man-image {
-  width: auto;
-  height: 80%;
-  float: left;
-  margin-top: 6%;
-  transform: translateX(-100vw);
-  animation: translateNone 0.8s ease 0.2s 1 normal forwards;
 }
 .slide:nth-of-type(1) {
   background-color: #95a5a6;
 }
-.text-content {
-  width: auto;
-  height: auto;
-  position: absolute;
-  right: 0px;
+.slide:nth-of-type(2) {
+  background-color: red;
+}
+.slide:nth-of-type(3) {
+  background-color: black;
 }
 .break-span {
   display: block;
