@@ -743,10 +743,10 @@ body {
 }
 .slider-read-more {
   border: none;
-  width: 120px;
+  width: 110px;
   height: 45px;
   font-size: 1.8em;
-  border-radius: 5px;
+  border-radius: 18px;
   background-color: #fff;
   transition: 0.2s;
 }

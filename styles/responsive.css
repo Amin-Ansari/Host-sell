@@ -45,22 +45,20 @@
     height: 0rem;
   }
   .slider-section {
-    height: 20rem;
+    height: 38rem;
   }
   .break-span {
     font-size: 2em;
-  }
-  .text-content {
-    bottom: 0px;
   }
   .slide-content {
     flex-direction: column-reverse;
   }
   .text-button {
-    height: 30%;
+    height: 35%;
+    padding: 5px 25px;
   }
   .image-container {
-    height: 70%;
+    height: 65%;
   }
   .image-container {
     background-position: center center;
