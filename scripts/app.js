@@ -21,7 +21,7 @@ canvas.addEventListener("click", (eventObj) => {
 canvasItem.forEach(function (item) {
   item.addEventListener("click", openMenuUp);
 });
-// sliderButtons[0].addEventListener("click", pushBack);
+sliderButtons[0].addEventListener("click", pushBack);
 sliderButtons[1].addEventListener("click", pushForward);
 
 function showAndHideCanvas() {
@@ -90,6 +90,17 @@ function pushForward() {
     pushValue = 0;
     slider.style = `transform: translateX(${pushValue}vw);`;
     resetAllDots(pushValue);
+  }
+}
+function pushBack() {
+  if (pushValue > 0) {
+    pushValue -= 100;
+    slider.style = `transform: translateX(${pushValue}vw);`;
+    resetAllDots(pushValue / 100);
+  } else {
+    pushValue = 200;
+    slider.style = `transform: translateX(${pushValue}vw);`;
+    resetAllDots(pushValue / 100);
   }
 }
 function resetAllDots(theDot) {
