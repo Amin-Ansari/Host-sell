@@ -199,17 +199,17 @@
     background-position: center center;
   }
   .break-span {
-    font-size: 2em;
+    font-size: 2.8em;
   }
   .slide-content {
     flex-direction: column-reverse;
   }
   .text-button {
-    height: 32%;
-    padding: 5px 90px;
+    height: 37%;
+    padding: 0px 90px;
   }
   .image-container {
-    height: 68%;
+    height: 63%;
   }
   .image-container {
     background-position: center center;
@@ -277,6 +277,13 @@
   .image-container {
     background-position: center center;
   }
+  .break-span {
+    font-size: 3em;
+  }
+  .text-button {
+    padding: 180px 120px 180px 0px;
+    height: 100%;
+  }
 }
 @media all and (min-width: 1200px) {
   .xl-width-col-1 {
@@ -318,8 +325,11 @@
   .slider-section {
     height: 40rem;
   }
+  .break-span {
+    font-size: 3.5em;
+  }
   .text-button {
-    padding: 180px 140px;
+    padding: 180px 120px 180px 0px;
     height: 100%;
   }
 }
@@ -360,8 +370,11 @@
   .xxl-width-col-12 {
     width: 100%;
   }
+  .break-span {
+    font-size: 4em;
+  }
   .text-button {
-    padding: 180px 160px;
+    padding: 180px 150px 180px 0px;
     height: 100%;
   }
 }
