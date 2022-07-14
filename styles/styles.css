@@ -730,7 +730,6 @@ body {
   background-size: contain;
 }
 .text-button {
-  padding: 180px 140px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
