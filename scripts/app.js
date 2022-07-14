@@ -4,6 +4,10 @@ let innerCanvas = document.querySelector(".off-canvas-menu");
 let canvasItem = document.querySelectorAll(".sub-title");
 let theHeader = document.querySelector("header");
 let theNavigation = document.querySelector("nav");
+let sliderButtons = document.querySelectorAll("button.slider-button");
+let slider = document.querySelector(".slider-section");
+let pushValue = 0;
+let dots = document.querySelector(".dots-container");
 
 window.addEventListener("scroll", resizeHeader);
 cnavasButton.addEventListener("click", showAndHideCanvas);
@@ -17,6 +21,8 @@ canvas.addEventListener("click", (eventObj) => {
 canvasItem.forEach(function (item) {
   item.addEventListener("click", openMenuUp);
 });
+sliderButtons[0].addEventListener("click", pushBack);
+sliderButtons[1].addEventListener("click", pushForward);
 
 function showAndHideCanvas() {
   rotateTheBar();
@@ -75,3 +81,44 @@ function resizeHeader() {
     theNavigation.style.height = "77px";
   }
 }
+function pushForward() {
+  if (pushValue < 200) {
+    pushValue += 100;
+    slider.style = `transform: translateX(${pushValue}vw);`;
+    resetAllDots(pushValue / 100);
+  } else {
+    pushValue = 0;
+    slider.style = `transform: translateX(${pushValue}vw);`;
+    resetAllDots(pushValue);
+  }
+}
+function pushBack() {
+  if (pushValue > 0) {
+    pushValue -= 100;
+    slider.style = `transform: translateX(${pushValue}vw);`;
+    resetAllDots(pushValue / 100);
+  } else {
+    pushValue = 200;
+    slider.style = `transform: translateX(${pushValue}vw);`;
+    resetAllDots(pushValue / 100);
+  }
+}
+function resetAllDots(theDot) {
+  let allDots = dots.children;
+  for (let i = 0; i <= 2; i++) {
+    allDots[i].classList.remove("active-dot");
+  }
+  allDots[theDot].classList.add("active-dot");
+  setTranslate(theDot);
+}
+function setTranslate(theDot) {
+  let imageContainers = document.querySelectorAll(".image-container");
+  for (let element of imageContainers) {
+    element.classList.remove("no-translate");
+  }
+  setTimeout(function () {
+    imageContainers[theDot].classList.add("no-translate");
+  }, 30);
+}
+
+setInterval(pushForward, 5000);

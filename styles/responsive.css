@@ -41,6 +41,46 @@
   .navigation-list {
     display: none;
   }
+  .slider-section {
+    height: 38rem;
+  }
+  .break-span {
+    font-size: 2em;
+  }
+  .slide-content {
+    flex-direction: column-reverse;
+  }
+  .text-button {
+    height: 35%;
+    padding: 5px 25px;
+  }
+  .image-container {
+    height: 65%;
+  }
+  .image-container {
+    background-position: center center;
+  }
+  .image-one {
+    background-position: center center;
+  }
+  .image-two {
+    background-position: center center;
+  }
+  .image-three {
+    background-position: left center;
+  }
+  .slider-button {
+    top: -255px;
+  }
+  .dots-container {
+    right: 40%;
+  }
+  .previous {
+    right: 1px;
+  }
+  .next {
+    left: 1px;
+  }
 }
 @media all and (min-width: 556px) {
   .sm-width-col-1 {
@@ -79,11 +119,62 @@
   .sm-width-col-12 {
     width: 100%;
   }
-  .off-canvas-button {
+  .social-nav-container {
     display: none;
   }
-  .off-canvas {
-    display: none !important;
+  .navigation-list {
+    display: none;
+  }
+  .off-canvas-button {
+    display: block;
+  }
+
+  .sub-link > h4 {
+    font-size: 1.1em;
+  }
+  .slider-section {
+    height: 23rem;
+  }
+  .break-span {
+    font-size: 1.8em;
+  }
+  .slide-content {
+    flex-direction: row;
+  }
+  .text-button {
+    height: 100%;
+    padding: 80px 25px;
+  }
+  .image-container {
+    height: 100%;
+  }
+  .image-container {
+    background-position: center center;
+  }
+  .image-one {
+    background-position: center center;
+  }
+  .image-two {
+    background-position: center center;
+  }
+  .image-three {
+    background-position: center center;
+    background-size: 80% 80%;
+  }
+  .dots-container {
+    right: 44%;
+  }
+  .slider-button {
+    top: -195px;
+  }
+  .slider-button::before {
+    font-size: 2.5em;
+  }
+  .previous {
+    right: 1px;
+  }
+  .next {
+    left: 1px;
   }
 }
 @media all and (min-width: 768px) {
@@ -123,8 +214,70 @@
   .md-width-col-12 {
     width: 100%;
   }
+  .social-nav-container {
+    display: flex;
+  }
+  .navigation-list {
+    display: flex;
+  }
   .off-canvas-button {
     display: none;
+  }
+  .sub-link > h4 {
+    font-size: 1.1em;
+  }
+  .slider-section {
+    height: 40rem;
+  }
+  .man-image {
+    width: auto;
+  }
+  .slide-content {
+    flex-direction: column-reverse;
+  }
+  .text-button {
+    height: 30%;
+  }
+  .image-container {
+    height: 70%;
+  }
+  .image-container {
+    background-position: center center;
+  }
+  .break-span {
+    font-size: 2.8em;
+  }
+  .slide-content {
+    flex-direction: column-reverse;
+  }
+  .text-button {
+    height: 37%;
+    padding: 0px 90px;
+  }
+  .image-container {
+    height: 63%;
+  }
+  .image-one {
+    background-position: center center;
+  }
+  .image-two {
+    background-position: center center;
+  }
+  .image-three {
+    background-position: center center;
+    background-size: contain;
+  }
+  .image-container {
+    background-position: center center;
+  }
+  .dots-container {
+    right: 43%;
+  }
+  .slider-button {
+    top: -300px;
+  }
+  .slider-button::before {
+    font-size: 3em;
   }
 }
 @media all and (min-width: 992px) {
@@ -167,6 +320,48 @@
   .off-canvas-button {
     display: none;
   }
+  .sub-link > h4 {
+    font-size: 1.8em;
+  }
+  .slider-section {
+    height: 45rem;
+  }
+  .man-image {
+    width: auto;
+  }
+  .slide-content {
+    flex-direction: row;
+  }
+  .text-button {
+    padding: 180px 140px;
+    height: 100%;
+  }
+  .image-container {
+    height: 100%;
+  }
+  .image-container {
+    background-position: center center;
+  }
+  .break-span {
+    font-size: 3em;
+  }
+  .text-button {
+    padding: 180px 120px 180px 0px;
+    height: 100%;
+  }
+  .dots-container {
+    right: 48%;
+  }
+  .image-one {
+    background-position: center center;
+  }
+  .image-two {
+    background-position: center center;
+  }
+  .image-three {
+    background-position: center center;
+    background-size: 80% 80%;
+  }
 }
 @media all and (min-width: 1200px) {
   .xl-width-col-1 {
@@ -205,6 +400,26 @@
   .xl-width-col-12 {
     width: 100%;
   }
+  .slider-section {
+    height: 40rem;
+  }
+  .break-span {
+    font-size: 3.5em;
+  }
+  .text-button {
+    padding: 180px 120px 180px 0px;
+    height: 100%;
+  }
+  .image-one {
+    background-position: center center;
+  }
+  .image-two {
+    background-position: center center;
+  }
+  .image-three {
+    background-position: center center;
+    background-size: 70% 80%;
+  }
 }
 @media all and (min-width: 1400px) {
   .xxl-width-col-1 {
@@ -242,6 +457,17 @@
   }
   .xxl-width-col-12 {
     width: 100%;
+  }
+  .break-span {
+    font-size: 4em;
+  }
+  .text-button {
+    padding: 180px 150px 180px 0px;
+    height: 100%;
+  }
+  .image-two {
+    background-position: center center;
+    background-size: 90% 90%;
   }
 }
 .container {
