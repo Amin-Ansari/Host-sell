@@ -699,6 +699,7 @@ body {
   display: flex;
   overflow: hidden;
   position: relative;
+  transition: all 0.5s;
 }
 .slide {
   height: 100%;
@@ -803,7 +804,7 @@ body {
   border: 2px solid #42c2ff;
   transition: 0.3s;
 }
-.dots:nth-of-type(1) {
+.active-dot {
   background-color: #42c2ff;
 }
 .intro {
