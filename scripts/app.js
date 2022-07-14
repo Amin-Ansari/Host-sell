@@ -120,3 +120,5 @@ function setTranslate(theDot) {
     imageContainers[theDot].classList.add("no-translate");
   }, 30);
 }
+
+setInterval(pushForward, 5000);

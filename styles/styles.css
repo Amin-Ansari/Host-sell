@@ -763,21 +763,9 @@ body {
 .no-translate {
   animation: translateNone 0.4s ease 0.2s 1 normal forwards;
 }
-.dots-container {
-  width: 80px;
-  height: 25px;
-  position: absolute;
-  top: -20px;
-  right: 50%;
-  background-color: #fff;
-  border-radius: 20px;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0px 5px;
-}
 .slider-button {
-  width: 15px;
-  height: 15px;
+  width: 50px;
+  height: 50px;
   border: none;
   background-color: transparent;
   position: absolute;
@@ -806,9 +794,21 @@ body {
 .next::before {
   content: "\f104";
 }
+.dots-container {
+  width: 80px;
+  height: 25px;
+  position: absolute;
+  top: -30px;
+  right: 50%;
+  background-color: #fff;
+  border-radius: 20px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 5px;
+}
 .dots {
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   border-radius: 100%;
   border: 2px solid #42c2ff;
   transition: 0.3s;
@@ -818,7 +818,6 @@ body {
 }
 .intro {
   height: 50px;
-  background-color: red;
   position: relative;
 }
 /* Hover styles */
