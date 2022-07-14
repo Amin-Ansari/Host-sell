@@ -109,4 +109,14 @@ function resetAllDots(theDot) {
     allDots[i].classList.remove("active-dot");
   }
   allDots[theDot].classList.add("active-dot");
+  setTranslate(theDot);
+}
+function setTranslate(theDot) {
+  let imageContainers = document.querySelectorAll(".image-container");
+  for (let element of imageContainers) {
+    element.classList.remove("no-translate");
+  }
+  setTimeout(function () {
+    imageContainers[theDot].classList.add("no-translate");
+  }, 30);
 }

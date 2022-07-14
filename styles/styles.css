@@ -729,7 +729,7 @@ body {
   align-items: center;
   background: url(../images/man.png) no-repeat left center;
   background-size: contain;
-  transform: translateX(-100%);
+  transform: translateX(-400vw);
 }
 .text-button {
   display: flex;
