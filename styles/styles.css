@@ -698,7 +698,7 @@ body {
   width: 400vw;
   display: flex;
   overflow: hidden;
-  /* transform: translateX(200vw); */
+  position: relative;
 }
 .slide {
   height: 100%;
@@ -728,6 +728,7 @@ body {
   align-items: center;
   background: url(../images/man.png) no-repeat left center;
   background-size: contain;
+  transform: translateX(-100%);
 }
 .text-button {
   display: flex;
@@ -750,7 +751,35 @@ body {
   background-color: #fff;
   transition: 0.2s;
 }
-
+.no-translate {
+  animation: translateNone 0.4s ease 0.2s 1 normal forwards;
+}
+.dots-container {
+  width: 85px;
+  height: 28px;
+  position: absolute;
+  top: -20px;
+  right: 50%;
+  background-color: #fff;
+  border-radius: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+.dots {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  border: 2px solid #42c2ff;
+  transition: 0.3s;
+}
+.dots:nth-of-type(1) {
+  background-color: #42c2ff;
+}
+.intro {
+  height: 50px;
+  background-color: red;
+  position: relative;
+}
 /* Hover styles */
 .addi-links > a:hover {
   color: #42c2ff;
