@@ -771,7 +771,6 @@ body {
   border: none;
   background-color: transparent;
   position: absolute;
-  top: -320px;
   transition: 0.3s;
   border-radius: 5px;
 }
@@ -782,7 +781,7 @@ body {
   font-style: normal;
   text-align: center;
   line-height: 50px;
-  font-size: 2em;
+  font-size: 3em;
   color: #fff;
 }
 .previous {
