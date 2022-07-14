@@ -42,9 +42,6 @@
     display: none;
   }
   .slider-section {
-    height: 0rem;
-  }
-  .slider-section {
     height: 38rem;
   }
   .break-span {
@@ -115,16 +112,20 @@
     font-size: 1.1em;
   }
   .slider-section {
-    height: 20rem;
+    height: 23rem;
+  }
+  .break-span {
+    font-size: 1.8em;
   }
   .slide-content {
-    flex-direction: column-reverse;
+    flex-direction: row;
   }
   .text-button {
-    height: 30%;
+    height: 100%;
+    padding: 80px 25px;
   }
   .image-container {
-    height: 70%;
+    height: 100%;
   }
   .image-container {
     background-position: center center;
