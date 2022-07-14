@@ -765,6 +765,38 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+.slider-button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: -320px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.slider-button::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+  line-height: 50px;
+  font-size: 2em;
+  color: #fff;
+}
+.previous {
+  right: 5px;
+}
+.next {
+  left: 5px;
+}
+.previous::before {
+  content: "\f105";
+}
+.next::before {
+  content: "\f104";
+}
 .dots {
   width: 18px;
   height: 18px;
@@ -820,6 +852,9 @@ body {
   outline: 3px solid #fff;
   background-color: transparent;
   color: #fff;
+}
+.slider-button:hover {
+  background-color: #21252981;
 }
 /* Animations */
 
