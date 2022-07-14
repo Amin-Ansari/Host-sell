@@ -467,7 +467,10 @@
   }
   .image-two {
     background-position: center center;
-    background-size: 90% 90%;
+  }
+  .image-three {
+    background-position: center center;
+    background-size: 60% 80%;
   }
 }
 .container {
