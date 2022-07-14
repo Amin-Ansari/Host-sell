@@ -465,6 +465,10 @@
     padding: 180px 150px 180px 0px;
     height: 100%;
   }
+  .image-two {
+    background-position: center center;
+    background-size: 90% 90%;
+  }
 }
 .container {
   max-width: 1320px;
