@@ -60,6 +60,15 @@
   .image-container {
     background-position: center center;
   }
+  .image-one {
+    background-position: center center;
+  }
+  .image-two {
+    background-position: center center;
+  }
+  .image-three {
+    background-position: left center;
+  }
   .slider-button {
     top: -255px;
   }
@@ -141,6 +150,16 @@
   }
   .image-container {
     background-position: center center;
+  }
+  .image-one {
+    background-position: center center;
+  }
+  .image-two {
+    background-position: center center;
+  }
+  .image-three {
+    background-position: center center;
+    background-size: 80% 80%;
   }
   .dots-container {
     right: 44%;
@@ -238,6 +257,16 @@
   .image-container {
     height: 63%;
   }
+  .image-one {
+    background-position: center center;
+  }
+  .image-two {
+    background-position: center center;
+  }
+  .image-three {
+    background-position: center center;
+    background-size: contain;
+  }
   .image-container {
     background-position: center center;
   }
@@ -323,6 +352,16 @@
   .dots-container {
     right: 48%;
   }
+  .image-one {
+    background-position: center center;
+  }
+  .image-two {
+    background-position: center center;
+  }
+  .image-three {
+    background-position: center center;
+    background-size: 80% 80%;
+  }
 }
 @media all and (min-width: 1200px) {
   .xl-width-col-1 {
@@ -370,6 +409,16 @@
   .text-button {
     padding: 180px 120px 180px 0px;
     height: 100%;
+  }
+  .image-one {
+    background-position: center center;
+  }
+  .image-two {
+    background-position: center center;
+  }
+  .image-three {
+    background-position: center center;
+    background-size: 70% 80%;
   }
 }
 @media all and (min-width: 1400px) {
