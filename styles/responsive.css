@@ -159,7 +159,6 @@
   }
   .image-three {
     background-position: center center;
-    background-size: 80% 80%;
   }
   .dots-container {
     right: 44%;
@@ -360,7 +359,6 @@
   }
   .image-three {
     background-position: center center;
-    background-size: 80% 80%;
   }
 }
 @media all and (min-width: 1200px) {
@@ -418,7 +416,6 @@
   }
   .image-three {
     background-position: center center;
-    background-size: 70% 80%;
   }
 }
 @media all and (min-width: 1400px) {
@@ -470,7 +467,6 @@
   }
   .image-three {
     background-position: center center;
-    background-size: 60% 80%;
   }
 }
 .container {

@@ -121,4 +121,4 @@ function setTranslate(theDot) {
   }, 30);
 }
 
-setInterval(pushForward, 5000);
+setInterval(pushForward, 6500);
