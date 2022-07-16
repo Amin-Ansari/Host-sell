@@ -681,18 +681,60 @@ body {
   padding-right: 0.9em;
 }
 .sub-link > h4::before {
-  content: "\f233";
+  content: "";
   font-family: "Font Awesome 5 Free";
   font-weight: bold;
   font-style: noraml;
   position: absolute;
   top: 0px;
   right: 0px;
-  width: 20%;
-  height: 100px;
+  width: 12%;
+  height: 45px;
   display: flex;
   justify-content: center;
   padding-top: 12px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.iran-flag::before {
+  background-image: url(../images/iran.png);
+}
+.canada-flag::before {
+  background-image: url(../images/canada.png);
+}
+.usa-flag::before {
+  background-image: url(../images/united-states.png);
+}
+.france-flag::before {
+  background-image: url(../images/france.png);
+}
+.germany-flag::before {
+  background-image: url(../images/germany.png);
+}
+.europe-flag::before {
+  background-image: url(../images/european-union.png);
+}
+h4.manage-server::before {
+  content: "\f1de";
+}
+h4.price-off::before {
+  content: "\f4c0";
+  font-weight: bold;
+  font-style: normal;
+  padding-top: 0px;
+}
+h4.winners::before {
+  content: "\f091";
+  font-weight: bold;
+  font-style: normal;
+  padding-top: 10px;
+}
+h4.class::before {
+  content: "\f51c";
+  font-weight: bold;
+  font-style: normal;
+  padding-top: 10px;
 }
 .slider-section {
   width: 400vw;
