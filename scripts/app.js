@@ -45,12 +45,18 @@ function undoRotation() {
   }
 }
 function openMenuUp() {
-  closeAllItems();
-  this.parentElement.classList.toggle("height-auto");
-  this.classList.toggle("active-state");
-  if (this.classList.contains("plus")) {
-    this.classList.replace("plus", "minus");
+  if (!this.classList.contains("active-state")) {
+    closeAllItems();
+    this.parentElement.classList.toggle("height-auto");
+    this.classList.toggle("active-state");
+    if (this.classList.contains("plus")) {
+      this.classList.replace("plus", "minus");
+    } else {
+      this.classList.replace("minus", "plus");
+    }
   } else {
+    this.parentElement.classList.remove("height-auto");
+    this.classList.remove("active-state");
     this.classList.replace("minus", "plus");
   }
   moveItemsIn(this);
@@ -137,12 +143,8 @@ function closeAllItems() {
   for (let element of offItem) {
     element.classList.remove("height-auto");
     element.firstElementChild.classList.remove("active-state");
-    if (element.classList.contains("plus")) {
-      element.classList.replace("plus", "minus");
-    } else {
-      element.classList.replace("minus", "plus");
-    }
+    element.classList.remove("minus");
+    element.firstElementChild.classList.replace("minus", "plus");
   }
 }
-
 setInterval(pushForward, 6500);
