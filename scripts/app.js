@@ -45,6 +45,7 @@ function undoRotation() {
   }
 }
 function openMenuUp() {
+  closeAllItems();
   this.parentElement.classList.toggle("height-auto");
   this.classList.toggle("active-state");
   if (this.classList.contains("plus")) {
@@ -70,6 +71,17 @@ function moveItemsIn(givvenELement) {
       ele.classList.remove("sub-in");
     }
   }
+  // let allSubItems = document.querySelectorAll(".sub-menu-item");
+  // let givvenElementChilds = givvenELement.nextElementSibling.children;
+  // let i = 0;
+  // for (let element of allSubItems) {
+  //   console.log(givvenELement);
+  //   if (element === givvenElementChilds) {
+  //     givvenElementChilds.classList.toggle("sub-in");
+  //     givvenElementChilds.style = `transition: all 0.3s ease ${i}s;`;
+  //     i += 0.1;
+  //   }
+  // }
 }
 function resizeHeader() {
   let headerHeight = theHeader.offsetHeight;
@@ -119,6 +131,18 @@ function setTranslate(theDot) {
   setTimeout(function () {
     imageContainers[theDot].classList.add("no-translate");
   }, 30);
+}
+function closeAllItems() {
+  let offItem = document.querySelectorAll(".off-canvas-item");
+  for (let element of offItem) {
+    element.classList.remove("height-auto");
+    element.firstElementChild.classList.remove("active-state");
+    if (element.classList.contains("plus")) {
+      element.classList.replace("plus", "minus");
+    } else {
+      element.classList.replace("minus", "plus");
+    }
+  }
 }
 
 setInterval(pushForward, 6500);
