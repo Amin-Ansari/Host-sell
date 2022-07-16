@@ -46,6 +46,7 @@
 }
 body {
   padding-top: 107px;
+  overflow-x: hidden;
 }
 /* A few styles that might be common in some elements */
 .padd-top-bottom-3 {
