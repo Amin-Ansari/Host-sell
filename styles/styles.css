@@ -866,9 +866,51 @@ h4.class::before {
   background-color: #42c2ff;
 }
 .intro {
-  height: 50px;
+  height: auto;
   position: relative;
 }
+.intro-content {
+  width: inherit;
+  height: auto;
+}
+.intro-list {
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+}
+.intro-content-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.intro-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+  background-color: #42c2ff;
+  display: inline-block;
+  color: #fff;
+  font-size: 2.7em;
+  padding-top: 12px;
+  transition: all 0.3s;
+  outline: 5px solid #42c2ff;
+  outline-offset: -10px;
+}
+
+.intro-title {
+  font-size: 1.8em;
+  color: #313131;
+}
+.read-more-link {
+  color: #42c2ff;
+  display: inline-block;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
 /* Hover styles */
 .addi-links > a:hover {
   color: #42c2ff;
@@ -912,6 +954,9 @@ h4.class::before {
 }
 .slider-button:hover {
   background-color: #21252981;
+}
+.intro-content-inner:hover > .intro-icon {
+  outline-offset: 6px;
 }
 /* Animations */
 
