@@ -897,9 +897,11 @@ h4.class::before {
   padding-top: 12px;
   transition: all 0.3s;
   outline: 5px solid #42c2ff;
-  outline-offset: -10px;
+  outline-offset: 6px;
 }
-
+.intro-text {
+  font-size: 1.2em;
+}
 .intro-title {
   font-size: 1.8em;
   color: #313131;
@@ -909,6 +911,7 @@ h4.class::before {
   display: inline-block;
   text-decoration: underline;
   text-decoration-style: dotted;
+  font-size: 1em;
 }
 
 /* Hover styles */
@@ -955,9 +958,7 @@ h4.class::before {
 .slider-button:hover {
   background-color: #21252981;
 }
-.intro-content-inner:hover > .intro-icon {
-  outline-offset: 6px;
-}
+
 /* Animations */
 
 @keyframes moveIn {
