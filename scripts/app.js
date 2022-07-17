@@ -8,6 +8,7 @@ let sliderButtons = document.querySelectorAll("button.slider-button");
 let slider = document.querySelector(".slider-container");
 let pushValue = 0;
 let dots = document.querySelector(".dots-container");
+let subMenues = document.querySelectorAll(".nav-submenu");
 
 window.addEventListener("scroll", resizeHeader);
 cnavasButton.addEventListener("click", showAndHideCanvas);
@@ -83,9 +84,15 @@ function resizeHeader() {
   if (window.scrollY >= headerHeight) {
     theHeader.firstElementChild.style = "display:none;";
     theNavigation.style.height = "73px";
+    for (let element of subMenues) {
+      element.style = "top:73px;";
+    }
   } else {
     theHeader.firstElementChild.style = "display:block;";
     theNavigation.style.height = "77px";
+    for (let element of subMenues) {
+      element.style = "top: 107px;";
+    }
   }
 }
 function pushForward() {
