@@ -81,6 +81,9 @@
   .next {
     left: 1px;
   }
+  .social-nav-container{
+    display: none !important;
+  }
 }
 @media all and (min-width: 556px) {
   .sm-width-col-1 {
