@@ -5,7 +5,7 @@ let canvasItem = document.querySelectorAll(".sub-title");
 let theHeader = document.querySelector("header");
 let theNavigation = document.querySelector("nav");
 let sliderButtons = document.querySelectorAll("button.slider-button");
-let slider = document.querySelector(".slider-section");
+let slider = document.querySelector(".slider-container");
 let pushValue = 0;
 let dots = document.querySelector(".dots-container");
 

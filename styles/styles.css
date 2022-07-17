@@ -740,15 +740,18 @@ h4.class::before {
   padding-top: 10px;
 }
 .slider-section {
-  width: 400vw;
   display: flex;
   overflow: hidden;
   position: relative;
+}
+.slider-container {
+  width: 300vw;
+  height: 100%;
   transition: all 0.3s;
 }
 .slide {
   height: 100%;
-  width: 25%;
+  width: 100vw;
   background-size: 100% 100%;
   background-position: center center;
   background-repeat: no-repeat;
