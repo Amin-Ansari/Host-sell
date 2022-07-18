@@ -860,6 +860,7 @@ h4.class::before {
   height: 15px;
   border-radius: 100%;
   border: 2px solid #42c2ff;
+  outline-offset: 2px;
   transition: 0.3s;
 }
 .active-dot {
@@ -913,6 +914,10 @@ h4.class::before {
   text-decoration-style: dotted;
   font-size: 1.1em;
   transition: all 0.3s;
+}
+.domain-name-container {
+  background-color: #42c2ff;
+  width: inherit;
 }
 
 /* Hover styles */
