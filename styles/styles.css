@@ -919,10 +919,12 @@ h4.class::before {
 .domain-name {
   height: auto;
   background-color: #42c2ff;
+  transition: all 0.3s;
 }
 .domain-name-container {
   width: inherit;
   flex-direction: column;
+  transition: all 0.3s;
 }
 .domain-title {
   color: #fff;
@@ -985,7 +987,8 @@ span.world-wide-web {
   outline: none;
 }
 .status-container {
-  height: 90px;
+  height: auto;
+  transition: all 0.3s;
 }
 .domain-status {
   font-size: 2em;
