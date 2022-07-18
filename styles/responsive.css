@@ -104,8 +104,14 @@
   .domain-status {
     font-size: 1.5em;
   }
+  .plan-title {
+    font-size: 1.5em;
+  }
   .domain-status::after {
     width: 250px;
+  }
+  .plan-text {
+    font-size: 0.8em;
   }
 }
 @media all and (min-width: 556px) {
