@@ -47,6 +47,7 @@
 body {
   padding-top: 107px;
   overflow-x: hidden;
+  background-color: #f1f1f1;
 }
 /* A few styles that might be common in some elements */
 .padd-top-bottom-3 {
@@ -1054,6 +1055,10 @@ span.world-wide-web {
   outline: 3px solid #fff;
   background-color: transparent;
   color: #fff;
+}
+.read-more-link:hover {
+  text-decoration: none;
+  transform: scale(1.1);
 }
 
 /* animations */
