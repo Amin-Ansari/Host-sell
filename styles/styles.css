@@ -1074,7 +1074,7 @@ span.world-wide-web {
   content: " حرفه ای" !important;
 }
 .super-pro-plan::before {
-  content: " فوق حرفه ای" !important;
+  content: "ویژه" !important;
 }
 .plan-text {
   text-align: center;
