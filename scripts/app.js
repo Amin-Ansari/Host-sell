@@ -11,6 +11,8 @@ let dots = document.querySelector(".dots-container");
 let subMenues = document.querySelectorAll(".nav-submenu");
 let domainSearch = document.querySelector(".search-input");
 let domainSearchButton = document.querySelector(".serach-button");
+let planItems = document.querySelectorAll(".plan-item>div");
+let planButton = document.querySelectorAll(".buy-link");
 let domainPrefixes = [
   "ir",
   "com",
@@ -48,6 +50,12 @@ canvasItem.forEach(function (item) {
 sliderButtons[0].addEventListener("click", pushBack);
 sliderButtons[1].addEventListener("click", pushForward);
 domainSearchButton.addEventListener("click", domainStatus);
+for (let i = 0; i < planButton.length; i++) {
+  planButton[i].addEventListener("click", selectPlan);
+}
+for (let i = 0; i < planItems.length; i++) {
+  planItems[i].addEventListener("click", selectPlan);
+}
 
 function showAndHideCanvas() {
   rotateTheBar();
@@ -200,12 +208,28 @@ function domainStatus() {
           }
         }
       } else {
-        statusP.innerHTML =" نام دامنه وارد شده فاقد پسوند میباشد";
+        statusP.innerHTML = " نام دامنه وارد شده فاقد پسوند میباشد";
         if (!statusP.classList.contains("status-show"))
           statusP.classList.add("status-show");
       }
     }
   }
 }
-
+function unSelectAllItems() {
+  for (let element of planItems) {
+    element.classList.replace("selected-plan", "plan-hover-state");
+  }
+}
+function selectPlan(eventObject) {
+  unSelectAllItems();
+  let thePlan = eventObject.target;
+  if (thePlan.nodeName != "DIV") {
+    thePlan.parentElement.classList.replace(
+      "plan-hover-state",
+      "selected-plan"
+    );
+  } else {
+    thePlan.classList.replace("plan-hover-state", "selected-plan");
+  }
+}
 setInterval(pushForward, 6500);
