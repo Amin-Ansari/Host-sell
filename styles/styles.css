@@ -983,6 +983,9 @@ span.world-wide-web {
   border: none;
   outline: none;
 }
+.status-container {
+  height: 90px;
+}
 .domain-status {
   font-size: 2em;
   height: 0px;
@@ -991,11 +994,25 @@ span.world-wide-web {
   font-family: "iran-sans-bold";
   font-weight: bolder;
   text-align: center;
+  transition: all 0.5s;
+  line-height: 70px;
+  color: #fff;
+  position: relative;
+}
+.domain-status::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 400px;
+  height: 2px;
+  right: 50%;
+  transform: translateX(50%);
+  background-color: #fff;
 }
 .status-show {
-  height: auto;
-  padding: 15px 10px;
+  height: 100%;
 }
+
 /* Hover styles */
 
 .addi-links > a:hover {

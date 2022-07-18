@@ -9,6 +9,29 @@ let slider = document.querySelector(".slider-container");
 let pushValue = 0;
 let dots = document.querySelector(".dots-container");
 let subMenues = document.querySelectorAll(".nav-submenu");
+let domainSearch = document.querySelector(".search-input");
+let domainSearchButton = document.querySelector(".serach-button");
+let domainPrefixes = [
+  "ir",
+  "com",
+  "net",
+  "io",
+  "org",
+  "tv",
+  "link",
+  "online",
+  "today",
+  "gov",
+  "gov.ir",
+  "net.ir",
+  "shop",
+  "teach",
+  "click",
+  "me",
+  "info",
+  "eu",
+  "art",
+];
 
 window.addEventListener("scroll", resizeHeader);
 cnavasButton.addEventListener("click", showAndHideCanvas);
@@ -24,6 +47,7 @@ canvasItem.forEach(function (item) {
 });
 sliderButtons[0].addEventListener("click", pushBack);
 sliderButtons[1].addEventListener("click", pushForward);
+domainSearchButton.addEventListener("click", domainStatus);
 
 function showAndHideCanvas() {
   rotateTheBar();
@@ -150,4 +174,38 @@ function subItemsOut() {
     element.classList.remove("sub-in");
   }
 }
+function domainStatus() {
+  let statusP = document.querySelector(".domain-status");
+  let domainName = String(domainSearch.value);
+  for (let i = 0; i < domainName.length; i++) {
+    let theSpace = domainName.lastIndexOf(" ");
+    if (theSpace != "-1") {
+      statusP.innerHTML = "فرمت وارد شده اشتباه میباشد";
+      if (!statusP.classList.contains("status-show"))
+        statusP.classList.add("status-show");
+    } else {
+      let indexOfDot = domainName.indexOf(".");
+      if (indexOfDot != "-1") {
+        let thePreFix = domainName.slice(indexOfDot + 1, this.length);
+        for (i = 0; i < domainPrefixes.length; i++) {
+          if (thePreFix == domainPrefixes[i]) {
+            statusP.innerHTML = "دامنه مورد نظر موجود میباشد";
+            if (!statusP.classList.contains("status-show"))
+              statusP.classList.add("status-show");
+            return;
+          } else {
+            statusP.innerHTML = `پسوند ${thePreFix} جزو پسوند های مورت تایید وب نمیباشد`;
+            if (!statusP.classList.contains("status-show"))
+              statusP.classList.add("status-show");
+          }
+        }
+      } else {
+        statusP.innerHTML =" نام دامنه وارد شده فاقد پسوند میباشد";
+        if (!statusP.classList.contains("status-show"))
+          statusP.classList.add("status-show");
+      }
+    }
+  }
+}
+
 setInterval(pushForward, 6500);
