@@ -921,6 +921,7 @@ h4.class::before {
 }
 .domain-name-container {
   width: inherit;
+  flex-direction: column;
 }
 .domain-title {
   color: #fff;
@@ -935,8 +936,56 @@ h4.class::before {
   text-align: center;
   font-size: 1.5em;
 }
+.input-container {
+  width: 100%;
+  height: auto;
+  direction: ltr;
+}
+span.world-wide-web {
+  font-size: 1.8em;
+  display: inline-block;
+  font-family: sans-serif;
+  direction: inherit;
+  text-align: right;
+  line-height: 54px;
+  padding-right: 5px;
+  color: #fff;
+}
+.input-and-button-container {
+  border-radius: 7px;
+  background-color: #fcfcfc57;
+  backdrop-filter: blur(200px);
+  direction: inherit;
+  overflow: hidden;
+}
+.input-and-button-container > input[type="search"] {
+  width: 90%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  direction: inherit;
+  font-size: 1.8em;
+  font-family: sans-serif;
+}
+.serach-button {
+  width: 10%;
+  height: 100%;
+  border: none;
+  background-color: white;
+  color: #42c2ff;
+  font-size: 1.8em;
+  font-weight: bold;
+  font-family: "Font Awesome 5 Free";
+  position: relative;
+}
+
+.input-and-button-container > input[type="search"]:focus {
+  border: none;
+  outline: none;
+}
 
 /* Hover styles */
+
 .addi-links > a:hover {
   color: #42c2ff;
 }
@@ -984,8 +1033,8 @@ h4.class::before {
   text-decoration: none;
   transform: scale(1.1);
 }
-/* Animations */
 
+/* animations */
 @keyframes moveIn {
   100% {
     transform: translateX(0px);

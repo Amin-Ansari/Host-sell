@@ -81,8 +81,25 @@
   .next {
     left: 1px;
   }
-  .social-nav-container{
+  .social-nav-container {
     display: none !important;
+  }
+  span.world-wide-web {
+    font-size: 1.3em;
+  }
+  .input-and-button-container > input[type="search"] {
+    font-size: 1.3em;
+    width: 85%;
+  }
+  .serach-button {
+    width: 15%;
+    font-size: 1.5em;
+  }
+  .domain-title {
+    font-size: 2em;
+  }
+  .domain-text {
+    font-size: 1em;
   }
 }
 @media all and (min-width: 556px) {
