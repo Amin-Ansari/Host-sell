@@ -983,7 +983,19 @@ span.world-wide-web {
   border: none;
   outline: none;
 }
-
+.domain-status {
+  font-size: 2em;
+  height: 0px;
+  padding: 0px;
+  overflow: hidden;
+  font-family: "iran-sans-bold";
+  font-weight: bolder;
+  text-align: center;
+}
+.status-show {
+  height: auto;
+  padding: 15px 10px;
+}
 /* Hover styles */
 
 .addi-links > a:hover {
@@ -1025,13 +1037,6 @@ span.world-wide-web {
   outline: 3px solid #fff;
   background-color: transparent;
   color: #fff;
-}
-.slider-button:hover {
-  background-color: #21252981;
-}
-.read-more-link:hover {
-  text-decoration: none;
-  transform: scale(1.1);
 }
 
 /* animations */
