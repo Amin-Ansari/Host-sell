@@ -1136,8 +1136,25 @@ p.cross-icon::after {
   color: #fff;
   background: rgba(255, 255, 255, 0.325);
 }
-/* Hover styles */
+.resme-section {
+  background-color: #42c2ff;
+}
+.resume-container {
+  width: inherit;
+}
+.resume-list {
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+}
+.resume-item {
+  background-color: rgba(255, 255, 255, 0.315);
+  width: 255px;
+  height: 255px;
+  border-radius: 100%;
+}
 
+/* Hover styles */
 .addi-links > a:hover {
   color: #42c2ff;
 }
@@ -1183,6 +1200,10 @@ p.cross-icon::after {
 }
 .plan-hover-state:hover {
   transform: translateY(-15px);
+}
+.previous:hover,
+.next:hover {
+  background-color: #38383885;
 }
 /* animations */
 @keyframes moveIn {

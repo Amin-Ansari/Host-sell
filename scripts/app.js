@@ -232,4 +232,4 @@ function selectPlan(eventObject) {
     thePlan.classList.replace("plan-hover-state", "selected-plan");
   }
 }
-setInterval(pushForward, 6500);
+setInterval(pushForward, 8000);
