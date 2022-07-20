@@ -63,7 +63,7 @@ window.addEventListener("scroll", function () {
     if (this.window.scrollY >= resumeSection.offsetTop - 700) {
       let number = Number(resumeItems[i].firstElementChild.textContent);
       let timer = this.setInterval(function () {
-        if (number < Number(resumeItems[i].clientHeight) * (i + 1)) {
+        if (number < Number(resumeItems[i].clientHeight) * (i + 2)) {
           number += 3;
           resumeItems[i].firstElementChild.textContent = number;
         } else {
