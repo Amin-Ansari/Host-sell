@@ -1148,10 +1148,28 @@ p.cross-icon::after {
   flex-wrap: wrap;
 }
 .resume-item {
-  background-color: rgba(255, 255, 255, 0.315);
+  border: 3px solid #fff;
   width: 255px;
   height: 255px;
   border-radius: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 6em;
+  position: relative;
+}
+.item-number {
+  text-align: center;
+  padding-top: 55px;
+}
+.resume-item::before {
+  content: "مشتری راضی";
+  position: absolute;
+  right: 50%;
+  bottom: 50px;
+  transform: translateX(50%);
+  color: inherit;
+  font-size: 28px !important;
+  font-weight: bold;
 }
 
 /* Hover styles */
