@@ -59,16 +59,11 @@ for (let i = 0; i < planItems.length; i++) {
   planItems[i].addEventListener("click", selectPlan);
 }
 window.addEventListener("scroll", function () {
-  console.log(resumeSection.offsetTop);
-  console.log(this.window.scrollY);
-
-  let randomNumList = [];
   for (let i = 0; i < resumeItems.length; i++) {
     if (this.window.scrollY >= resumeSection.offsetTop - 700) {
       let number = Number(resumeItems[i].firstElementChild.textContent);
-      randomNumList.push(randomNumCreator(1021));
       let timer = this.setInterval(function () {
-        if (number < randomNumList[i]) {
+        if (number < Number(resumeItems[i].clientHeight) * (i + 1)) {
           number += 3;
           resumeItems[i].firstElementChild.textContent = number;
         } else {
@@ -79,9 +74,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-function randomNumCreator(num) {
-  return Math.floor(Math.random() * Number(num));
-}
 function showAndHideCanvas() {
   rotateTheBar();
   showCanvas();
