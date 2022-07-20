@@ -1149,8 +1149,8 @@ p.cross-icon::after {
 }
 .resume-item {
   border: 3px solid #fff;
-  width: 255px;
-  height: 255px;
+  width: 260px;
+  height: 260px;
   border-radius: 100%;
   color: #fff;
   text-align: center;
@@ -1161,14 +1161,47 @@ p.cross-icon::after {
   text-align: center;
   padding-top: 55px;
 }
-.resume-item::before {
-  content: "مشتری راضی";
+div.resume-item::before {
   position: absolute;
   right: 50%;
   bottom: 50px;
   transform: translateX(50%);
   color: inherit;
-  font-size: 28px !important;
+  font-size: 25px !important;
+  font-weight: bold;
+}
+.customer::before {
+  content: "مشتری راضی";
+}
+.customer::after {
+  content: "\f161";
+}
+.server::before {
+  content: "سرور ابری";
+}
+.server::after {
+  content: "\f381";
+}
+.file::before {
+  content: "فایل  ها";
+}
+.file::after {
+  content: "\f15c";
+}
+.page::before {
+  content: "صفحات";
+}
+.page::after {
+  content: "\f1ea";
+}
+div.resume-item::after {
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  right: 50%;
+  top: 10px;
+  transform: translateX(50%);
+  color: inherit;
+  font-size: 50px !important;
   font-weight: bold;
 }
 
