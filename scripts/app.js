@@ -66,7 +66,7 @@ window.addEventListener("scroll", function () {
   for (let i = 0; i < resumeItems.length; i++) {
     if (this.window.scrollY >= resumeSection.offsetTop - 700) {
       let number = Number(resumeItems[i].firstElementChild.textContent);
-      randomNumList.push(Math.floor(Math.random() * 1251));
+      randomNumList.push(randomNumCreator(1021));
       let timer = this.setInterval(function () {
         if (number < randomNumList[i]) {
           number += 3;
@@ -79,6 +79,9 @@ window.addEventListener("scroll", function () {
   }
 });
 
+function randomNumCreator(num) {
+  return Math.floor(Math.random() * Number(num));
+}
 function showAndHideCanvas() {
   rotateTheBar();
   showCanvas();
