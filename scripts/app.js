@@ -13,6 +13,8 @@ let domainSearch = document.querySelector(".search-input");
 let domainSearchButton = document.querySelector(".serach-button");
 let planItems = document.querySelectorAll(".plan-item>div");
 let planButton = document.querySelectorAll(".buy-link");
+let resumeItems = document.querySelectorAll(".resume-item");
+let resumeSection = document.querySelector(".resme-section");
 let domainPrefixes = [
   "ir",
   "com",
@@ -56,6 +58,26 @@ for (let i = 0; i < planButton.length; i++) {
 for (let i = 0; i < planItems.length; i++) {
   planItems[i].addEventListener("click", selectPlan);
 }
+window.addEventListener("scroll", function () {
+  console.log(resumeSection.offsetTop);
+  console.log(this.window.scrollY);
+
+  let randomNumList = [];
+  for (let i = 0; i < resumeItems.length; i++) {
+    if (this.window.scrollY >= resumeSection.offsetTop - 700) {
+      let number = Number(resumeItems[i].firstElementChild.textContent);
+      randomNumList.push(Math.floor(Math.random() * 1251));
+      let timer = this.setInterval(function () {
+        if (number < randomNumList[i]) {
+          number += 3;
+          resumeItems[i].firstElementChild.textContent = number;
+        } else {
+          clearInterval(timer);
+        }
+      }, 1);
+    }
+  }
+});
 
 function showAndHideCanvas() {
   rotateTheBar();
