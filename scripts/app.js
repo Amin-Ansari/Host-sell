@@ -16,6 +16,9 @@ let planButton = document.querySelectorAll(".buy-link");
 let resumeItems = document.querySelectorAll(".resume-item");
 let resumeSection = document.querySelector(".resme-section");
 let accordionMenu = document.querySelector(".accordion");
+let rightTValue = 0;
+let allDotsNum = 0;
+let domainForm = document.querySelector(".input-and-button-container");
 let domainPrefixes = [
   "ir",
   "com",
@@ -75,6 +78,12 @@ window.addEventListener("scroll", function () {
   }
 });
 accordionMenu.addEventListener("click", showAcc);
+domainForm.addEventListener("keypress", function (eventObject) {
+  if (eventObject.key == "Enter") {
+    eventObject.preventDefault();
+    domainStatus();
+  }
+});
 
 function showAndHideCanvas() {
   rotateTheBar();
@@ -208,6 +217,7 @@ function domainStatus() {
     let theSpace = domainName.lastIndexOf(" ");
     if (theSpace != "-1") {
       statusP.innerHTML = "فرمت وارد شده اشتباه میباشد";
+      console.log(domainSearch.value);
       if (!statusP.classList.contains("status-show"))
         statusP.classList.add("status-show");
     } else {
@@ -270,8 +280,7 @@ function closseAllAcc(eventObject) {
     }
   }
 }
-let rightTValue = 0;
-let allDotsNum = 0;
+
 function quoteForward() {
   let theQuotues = document.querySelector(".customer-thoughts");
   if (rightTValue < 66.66) {
