@@ -113,6 +113,15 @@
   .plan-text {
     font-size: 0.8em;
   }
+  footer h4 {
+    text-align: center;
+  }
+  .social {
+    text-align: center;
+  }
+  div.icons-list {
+    text-align: center;
+  }
 }
 @media all and (min-width: 556px) {
   .sm-width-col-1 {
@@ -160,7 +169,6 @@
   .off-canvas-button {
     display: block;
   }
-
   .sub-link > h4 {
     font-size: 1.1em;
   }
@@ -206,6 +214,12 @@
   }
   .next {
     left: 1px;
+  }
+  .social {
+    text-align: center;
+  }
+  div.icons-list {
+    text-align: center;
   }
 }
 @media all and (min-width: 768px) {
@@ -310,6 +324,12 @@
   .slider-button::before {
     font-size: 3em;
   }
+  .social {
+    text-align: center;
+  }
+  div.icons-list {
+    text-align: center;
+  }
 }
 @media all and (min-width: 992px) {
   .lg-width-col-1 {
@@ -391,6 +411,12 @@
   }
   .image-three {
     background-position: center center;
+  }
+  .social {
+    text-align: right;
+  }
+  div.icons-list {
+    text-align: left;
   }
 }
 @media all and (min-width: 1200px) {
