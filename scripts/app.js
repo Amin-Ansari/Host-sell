@@ -148,7 +148,7 @@ function resizeHeader() {
       element.style = "top:73px;";
     }
   } else {
-    theHeader.firstElementChild.style = "display:block;";
+    theHeader.firstElementChild.style = "display:flex;";
     theNavigation.style.height = "77px";
     for (let element of subMenues) {
       element.style = "top: 107px;";
