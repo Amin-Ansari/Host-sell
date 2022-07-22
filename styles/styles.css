@@ -1294,7 +1294,7 @@ li.accordion-item::after {
 .thought-dots {
   position: absolute;
   bottom: 0px;
-  width: 65px;
+  width: 70px;
   height: 30px;
   right: 50%;
   transform: translateX(50%);

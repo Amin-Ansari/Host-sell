@@ -270,5 +270,29 @@ function closseAllAcc(eventObject) {
     }
   }
 }
+let rightTValue = 0;
+let allDotsNum = 0;
+function quoteForward() {
+  let theQuotues = document.querySelector(".customer-thoughts");
+  if (rightTValue < 66.66) {
+    rightTValue += 33.33;
+    allDotsNum += 1;
+    theQuotues.style = `transform: translateX(${rightTValue}%)`;
+    allDotsReset(allDotsNum);
+  } else {
+    rightTValue = 0;
+    allDotsNum = 0;
+    theQuotues.style = `transform: translateX(${rightTValue}%)`;
+    allDotsReset(allDotsNum);
+  }
+}
+function allDotsReset(inIndex) {
+  let elements = document.querySelectorAll(".tho-dots");
+  for (let element of elements) {
+    element.classList.remove("selected-dot");
+  }
+  elements[inIndex].classList.add("selected-dot");
+}
 
 setInterval(pushForward, 8000);
+setInterval(quoteForward, 3000);
