@@ -255,12 +255,18 @@ function showAcc(eventObject) {
   let theElement = eventObject.target;
   closseAllAcc(eventObject);
   theElement.nextElementSibling.classList.toggle("show-accordion");
+  if (theElement.classList.contains("plus")) {
+    theElement.classList.replace("plus", "minus");
+  } else {
+    theElement.classList.replace("minus", "plus");
+  }
 }
 function closseAllAcc(eventObject) {
   let theLis = document.querySelectorAll(`.${accordionMenu.className}>li`);
   for (let element of theLis) {
     if (element != eventObject.target) {
       element.nextElementSibling.classList.remove("show-accordion");
+      element.classList.replace("minus", "plus");
     }
   }
 }

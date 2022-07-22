@@ -915,7 +915,7 @@ h4.class::before {
 }
 .intro-title {
   font-size: 1.8em;
-  color: #313131;
+  color: #414141;
 }
 .read-more-link {
   color: #42c2ff;
@@ -1088,7 +1088,7 @@ span.world-wide-web {
   text-align: right;
   font-size: 1.3em;
   position: relative;
-  color: #383838;
+  color: #414141;
 }
 .inner-plan > p::after {
   content: "";
@@ -1211,6 +1211,7 @@ div.resume-item::after {
 }
 .customer-part {
   overflow: hidden;
+  border: 3px solid black;
 }
 .customer-part > h5 {
   font-size: 2.5em;
@@ -1222,6 +1223,7 @@ div.resume-item::after {
   font-size: 1.7em;
   transition: all 0.3s;
   position: relative;
+  color: #3f3f3f;
 }
 li.accordion-item::after {
   font-family: "Font Awesome 5 Free";
@@ -1238,17 +1240,56 @@ li.accordion-item::after {
   transition: all 0.3s;
 }
 .accordion-text {
-  font-size: 1.3em;
+  font-size: 1.2em;
   overflow: hidden;
   height: 0px;
-  transition: all 0.3px;
   transition: height 0.3s;
+  display: flex;
+  align-items: center;
 }
 .show-accordion {
   border: 2px solid #dddddd;
   height: 127px;
-  padding: 15px 20px;
+  padding: 0px 20px;
   transition: all 0.3px;
+}
+.customer-thoughts {
+  width: 300%;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.thoughts-items {
+  width: 33.33%;
+}
+.quoute {
+  background-color: #dddddd;
+  color: #3f3f3f;
+  border-radius: 5px;
+  font-size: 1.27em;
+}
+.quoute::before {
+  content: "\f10d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  display: block;
+  width: 80px;
+  font-size: 2.5em;
+  color: #42c2ff;
+}
+.customer-info {
+  justify-content: space-between;
+  align-items: center;
+}
+.customer-info > p {
+  font-size: 2em;
+}
+.role {
+  display: block;
+  color: #95a5a6;
+  font-size: 0.55em;
+}
+.customer-avatar {
+  margin-left: 5px;
 }
 
 /* Hover styles */
