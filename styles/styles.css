@@ -1204,6 +1204,50 @@ div.resume-item::after {
   font-size: 50px !important;
   font-weight: bold;
 }
+.customer-section {
+  width: inherit;
+  height: auto;
+  flex-wrap: wrap;
+}
+.customer-part {
+  overflow: hidden;
+}
+.customer-part > h5 {
+  font-size: 2.5em;
+}
+.accordion-item {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #dddddd;
+  font-size: 1.7em;
+  transition: all 0.3px;
+  position: relative;
+}
+li.accordion-item::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  font-style: noraml;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 70px;
+  height: 100%;
+  text-align: center;
+  line-height: 70px;
+  color: #42c2ff;
+}
+
+.accordion-text {
+  font-size: 1.3em;
+  overflow: hidden;
+  height: 0px;
+  transition: all 0.3px;
+}
+.show-accordion {
+  border: 2px solid #dddddd;
+  height: auto;
+  padding: 15px 20px;
+}
 
 /* Hover styles */
 .addi-links > a:hover {
@@ -1255,6 +1299,9 @@ div.resume-item::after {
 .previous:hover,
 .next:hover {
   background-color: #38383885;
+}
+.acc-hover:hover {
+  background-color: #cfcfcf;
 }
 /* animations */
 @keyframes moveIn {

@@ -15,6 +15,7 @@ let planItems = document.querySelectorAll(".plan-item>div");
 let planButton = document.querySelectorAll(".buy-link");
 let resumeItems = document.querySelectorAll(".resume-item");
 let resumeSection = document.querySelector(".resme-section");
+let accordionMenu = document.querySelector(".accordion");
 let domainPrefixes = [
   "ir",
   "com",
@@ -73,6 +74,7 @@ window.addEventListener("scroll", function () {
     }
   }
 });
+accordionMenu.addEventListener("click", showAcc);
 
 function showAndHideCanvas() {
   rotateTheBar();
@@ -249,4 +251,16 @@ function selectPlan(eventObject) {
     thePlan.classList.replace("plan-hover-state", "selected-plan");
   }
 }
+function showAcc(eventObject) {
+  closseAllAcc();
+  let theElement = eventObject.target;
+  theElement.nextElementSibling.classList.toggle("show-accordion");
+}
+function closseAllAcc() {
+  let theLis = document.querySelectorAll(`.${accordionMenu.className}>li`);
+  for (let element of theLis) {
+    element.nextElementSibling.classList.remove("show-accordion");
+  }
+}
+
 setInterval(pushForward, 8000);
