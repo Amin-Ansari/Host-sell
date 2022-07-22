@@ -1211,7 +1211,7 @@ div.resume-item::after {
 }
 .customer-part {
   overflow: hidden;
-  border: 3px solid black;
+  position: relative;
 }
 .customer-part > h5 {
   font-size: 2.5em;
@@ -1290,6 +1290,28 @@ li.accordion-item::after {
 }
 .customer-avatar {
   margin-left: 5px;
+}
+.thought-dots {
+  position: absolute;
+  bottom: 0px;
+  width: 65px;
+  height: 30px;
+  right: 50%;
+  transform: translateX(50%);
+  justify-content: space-between;
+  align-items: center;
+}
+span.tho-dots {
+  width: 15px;
+  height: 15px;
+  border-radius: 55px;
+  background-color: #dddddd;
+  transition: all 0.3s;
+}
+.selected-dot {
+  background-color: #42c2ff !important;
+  outline: 2px solid #42c2ff;
+  outline-offset: 3px;
 }
 
 /* Hover styles */
