@@ -252,14 +252,16 @@ function selectPlan(eventObject) {
   }
 }
 function showAcc(eventObject) {
-  closseAllAcc();
   let theElement = eventObject.target;
+  closseAllAcc(eventObject);
   theElement.nextElementSibling.classList.toggle("show-accordion");
 }
-function closseAllAcc() {
+function closseAllAcc(eventObject) {
   let theLis = document.querySelectorAll(`.${accordionMenu.className}>li`);
   for (let element of theLis) {
-    element.nextElementSibling.classList.remove("show-accordion");
+    if (element != eventObject.target) {
+      element.nextElementSibling.classList.remove("show-accordion");
+    }
   }
 }
 

@@ -1220,7 +1220,7 @@ div.resume-item::after {
   border-radius: 5px;
   background-color: #dddddd;
   font-size: 1.7em;
-  transition: all 0.3px;
+  transition: all 0.3s;
   position: relative;
 }
 li.accordion-item::after {
@@ -1235,18 +1235,20 @@ li.accordion-item::after {
   text-align: center;
   line-height: 70px;
   color: #42c2ff;
+  transition: all 0.3s;
 }
-
 .accordion-text {
   font-size: 1.3em;
   overflow: hidden;
   height: 0px;
   transition: all 0.3px;
+  transition: height 0.3s;
 }
 .show-accordion {
   border: 2px solid #dddddd;
-  height: auto;
+  height: 127px;
   padding: 15px 20px;
+  transition: all 0.3px;
 }
 
 /* Hover styles */
